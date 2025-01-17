@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio of Kusan</title>
+</head>
+<body>
+    <header>
+        <nav>
+
+            <div class="logo">Kusan</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm<br>Kusan Khambu.</h1>
+            <!-- <p class="subtitle">Full Stack Developer & UI Designer</p> -->
+            <a href="#contact" class="cta-button">Let's Create Something Amazing</a>
+        </div>
+    </section>
+
+    <section id="about" class="about reveal">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I’m Kusan... a computer engineering student who loves blending tech and creativity—whether it’s building intelligent apps, training machine learning models, or leveling up in video games. When I’m not coding, you’ll find me on the futsal field or exploring ways to turn big ideas into impactful solutions.</p>
+                <div class="skills">
+                    <div class="skill">HTML5</div>
+                    <div class="skill">CSS3</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">React</div>
+                    <div class="skill">Node.js</div>
+                    <div class="skill">UI/UX Design</div>
+                    <div class="skill">Responsive Design</div>
+                    <div class="skill">Web Animation</div>
+                    <div class="skill">Deep Learning</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Featured Work</h2>
+        <div class="project-grid">
+            <a id="link" href="https://github.com/KhamuKusan7/Bird_Classification" target="_blank">
+                <div class="project-card">
+                    <!-- <div class="project-image"></div> -->
+                    <img class="birdie" src="./images/sparrow.jpeg" alt="birdie" />
+                    <h3>Bird Classification</h3>
+                    <p>An Alexnet model to classify 32 species of Birds.</p>
+                </div>
+            </a>
+            
+            
+            <a id ="link" href="https://github.com/KhamuKusan7/PremierLeagueTemplate" target="_blank">
+                <div class="project-card">
+                    <!-- <div class="project-image"></div> -->
+                    <img class="cv" src="./images/dash.jpeg" alt="portfolio" />
+
+                    <h3>UI/UX</h3>
+                    <p>Clean and minimal UserInterface showcasing creative works and Desgins.</p>
+                </div>
+            </a>
+            <a id ="link" href="https://github.com/nimesh69/Hand-Gesture-Recognition" target="_blank">
+                <div class="project-card">
+                <!-- <div class="project-image"></div> -->
+                
+                    <img class="ML" src="./images/nimesh.jpeg" alt="nimesh" />
+
+                    <h3>Hand Gesture Recoginition</h3>
+                    <p>A LSTM model to classify the hand gestures. It was our minor project</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact reveal">
+        <h2>Get in Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.846072668135!2d85.38760362532315!3d27.691151976191875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1a5bee851915%3A0x18d6ced81c235072!2sBode%2C%20Madhyapur%20Thimi%2044600!5e0!3m2!1sen!2snp!4v1737042549021!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a href="contact.html">Contact Me</a>
+                <p>+977 9861286024</p>
+                <p>Madhyapur Thimi,Bode,Bhaktapur</p>
+                <div class="icons">
+                    <a href="https://github.com/KhamuKusan7" id="link" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/kusan-khambu-28bb2631b/" id="link" target="_blank"><i class="fa fa-linkedin" ></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kusan Khambu</p>
+    </footer>
+
+    <!-- <script>
+        // Reveal animations on scroll
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        reveal(); // Initial check
+    </script> -->
+
+    <script>
+        // Reveal animations on scroll
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        // Background opacity on scroll
+        function updateBackgroundOpacity() {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (!hero) return;
+            
+            const heroHeight = hero.offsetHeight;
+            const opacity = Math.max(0, 1 - (scrolled / heroHeight));
+            
+            document.documentElement.style.setProperty('--bg-opacity', opacity.toString());
+            hero.style.setProperty('--bg-opacity', opacity.toString());
+        }
+
+        window.addEventListener('scroll', () => {
+            reveal();
+            updateBackgroundOpacity();
+        });
+        
+        // Initial check
+        reveal();
+        updateBackgroundOpacity();
+    </script>
+</body>
+</html>
