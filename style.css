@@ -362,7 +362,16 @@ h2::after {
   position: relative;
   overflow: hidden;
 }
-
+.PLHub{
+  width:100%;
+  height:60%;
+  background-color: #380F4C;
+}
+.BookHub{
+  width: 100%;
+  height: 60%;
+  background-color: rgb(250, 250, 250);
+}
 .birdie{
   width:100%;
   height:60%;
